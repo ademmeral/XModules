@@ -1,3 +1,7 @@
+/**
+ *@ADEMMERAL_XSTRING
+  https://github.com/ademmeral/XModules/blob/main/XString.js
+*/
 
 export class XString {
 

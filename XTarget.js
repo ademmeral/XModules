@@ -1,3 +1,7 @@
+/**
+ *@ADEMMERAL_XTARGET
+  https://github.com/ademmeral/XModules/blob/main/XTarget.js
+*/
 
 class XTargetError extends Error{
   constructor(message){

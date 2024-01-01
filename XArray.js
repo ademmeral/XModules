@@ -1,3 +1,8 @@
+/**
+ *@ADEMMERAL_XARRAY
+  https://github.com/ademmeral/XModules/blob/main/XArray.js
+*/
+
 export class XArray{
 
   static numbers(from = 0, to = 1)  // sorted numbers

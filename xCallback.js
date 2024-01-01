@@ -1,14 +1,17 @@
+/**
+ *@ADEMMERAL_xCallback
+  https://github.com/ademmeral/XModules/blob/main/xCallback.js
+*/
 
-export function xMemo(fn) {
-  // You can use known object literal instead of Map. I just wanted to show off... Lol
+export function xCallback(fn) {
   const storage = new Map();
 
   return async (...args) => {
     if (storage.get(fn.name))
-      return ['from storage', ...storage.get(fn.name)];
+      return storage.get(fn.name);
 
     storage.set(fn.name, await fn(...args));
-    return ['from api', ...storage.get(fn.name)];
+    return storage.get(fn.name);
   }
 }
 
@@ -20,8 +23,8 @@ let fetchData = async (url) => {
   try { return (await (await fetch(url)).json()); }
   catch ({ message }) { throw message; };
 }
-// And the one of the important benefits of "decorators" is heap-friendly
-fetchData = xMemo(fetchData);
+
+fetchData = xCallback(fetchData);
 
 const myFancyButton = document.querySelector('button');
 myFancyButton.addEventListener('click', () => {

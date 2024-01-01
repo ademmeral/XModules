@@ -1,3 +1,8 @@
+/**
+ *@ADEMMERAL_xInterval
+  https://github.com/ademmeral/XModules/blob/main/xInterval.js
+*/
+
 export function xInterval(callback, interval) {
   let startTime = null;
   let reqId;

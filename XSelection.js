@@ -1,3 +1,8 @@
+/**
+ *@ADEMMERAL_XSELECTION
+  https://github.com/ademmeral/XModules/blob/main/XSelection.js
+*/
+
 export class XSelection{
   #isSelecting = null;
   #timeout = null;

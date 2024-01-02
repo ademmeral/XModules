@@ -35,7 +35,10 @@ export default class XStorage extends XTarget {
   set state(newState = null){
     this.#proxy.previous = this.#proxy.current;
     this.#proxy.current = newState;
-    this.emit('STATE_CHANGE');
+    this.emit('STATE_CHANGE', { 
+      previous: this.#proxy.previous, 
+      current: this.#proxy.current 
+    });
   };
 }
 

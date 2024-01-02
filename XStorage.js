@@ -20,11 +20,11 @@ export default class XStorage extends XTarget {
       return result;
     }
   };
-  #storage = {
+  #target = {
     current : null,
     previous : null
   };
-  #proxy = new Proxy(this.#storage, this.#handler);
+  #proxy = new Proxy(this.#target, this.#handler);
   constructor(state = null) {
     super();
     this.#proxy.current = state;

@@ -1,6 +1,6 @@
 /**
- *@ADEMMERAL_xSmoothScroll
-  https://github.com/ademmeral/XModules/blob/main/xSmoothScroll.js
+  * @ADEMMERAL_xSmoothScroll
+  * https://github.com/ademmeral/XModules/blob/main/xSmoothScroll.js
 */
 
 export function xSmoothScroll(element = document.body, direction = 'y', target = 0, duration = 1000) {

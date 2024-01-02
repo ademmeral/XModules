@@ -1,6 +1,6 @@
 /**
- *@ADEMMERAL_XARRAY
-  https://github.com/ademmeral/XModules/blob/main/XArray.js
+ * @ADEMMERAL_XARRAY
+ * https://github.com/ademmeral/XModules/blob/main/XArray.js
 */
 
 export class XArray{

@@ -1,11 +1,11 @@
 import XTarget from "./XTarget.js"; 
 
 /**
-  *@ADEMMERAL_XSTORAGE
-    https://github.com/ademmeral/XModules/blob/main/XStorage.js
+  * @ADEMMERAL_XSTORAGE
+  * https://github.com/ademmeral/XModules/blob/main/XStorage.js
 
-  *@ADEMMERAL_XTARGET
-    https://github.com/ademmeral/XModules/blob/main/XTarget.js
+  * @ADEMMERAL_XTARGET
+  * https://github.com/ademmeral/XModules/blob/main/XTarget.js
 */
 
 export default class XStorage extends XTarget {

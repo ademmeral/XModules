@@ -1,6 +1,6 @@
 /**
- *@ADEMMERAL_XDATE
-  https://github.com/ademmeral/XModules/blob/main/XDate.js
+  * @ADEMMERAL_XDATE
+  * https://github.com/ademmeral/XModules/blob/main/XDate.js
 */
 
 class XDateError extends Error{

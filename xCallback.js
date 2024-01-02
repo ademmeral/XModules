@@ -1,6 +1,6 @@
 /**
- *@ADEMMERAL_xCallback
-  https://github.com/ademmeral/XModules/blob/main/xCallback.js
+  * @ADEMMERAL_xCallback
+  * https://github.com/ademmeral/XModules/blob/main/xCallback.js
 */
 
 export function xCallback(fn) {

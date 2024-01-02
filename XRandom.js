@@ -1,6 +1,6 @@
 /**
- *@ADEMMERAL_XRANDOM
-  https://github.com/ademmeral/XModules/blob/main/Xrandom.js
+  * @ADEMMERAL_XRANDOM
+  * https://github.com/ademmeral/XModules/blob/main/Xrandom.js
 */
 
 export default class XRandom {

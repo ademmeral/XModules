@@ -1,6 +1,6 @@
 /**
- *@ADEMMERAL_XSELECTION
-  https://github.com/ademmeral/XModules/blob/main/XSelection.js
+  * @ADEMMERAL_XSELECTION
+  * https://github.com/ademmeral/XModules/blob/main/XSelection.js
 */
 
 export class XSelection{

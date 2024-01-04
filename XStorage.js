@@ -1,14 +1,12 @@
-import XTarget from "./XTarget.js"; 
+"use strict"
 
 /**
   * @ADEMMERAL_XSTORAGE
-  * https://github.com/ademmeral/XModules/blob/main/XStorage.js
-
-  * @ADEMMERAL_XTARGET
-  * https://github.com/ademmeral/XModules/blob/main/XTarget.js
+  * https://github.com/ademmeral/xmodules/blob/main/XStorage.js
 */
 
-export default class XStorage extends XTarget {
+export default class XStorage {
+  // privates
   #handler = {
     get: (target, prop, rec) => {
       // Check if prop is a valid array index
@@ -25,20 +23,21 @@ export default class XStorage extends XTarget {
     previous : null
   };
   #proxy = new Proxy(this.#target, this.#handler);
+  // constructing
   constructor(state = null) {
-    super();
-    this.#proxy.current = state;
+    if (state !== null)
+      this.#proxy.current = state;
   };
-  get state(){
+  // methods
+  get current(){
     return this.#proxy.current;
   };
-  set state(newState = null){
+  set current(newState = null){
     this.#proxy.previous = this.#proxy.current;
     this.#proxy.current = newState;
-    this.emit('STATE_CHANGE', { 
-      previous: this.#proxy.previous, 
-      current: this.#proxy.current 
-    });
+  };
+  get previous(){
+    return this.#proxy.previous;
   };
 }
 
